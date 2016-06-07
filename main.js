@@ -8,7 +8,13 @@ $(function() {
     var animation = Math.floor(Math.random()*2)
     var duration = Math.floor(Math.random()*20) + 5
     animation == 1 ? animation = "clockwise" : animation = "anti-clockwise"
-    $('svg').append('<circle cx="50" cy="50" r="'+radius+'" style="stroke-dasharray: '+ stroke +'; stroke-dashoffset: '+ offset + '; animation-name: ' + animation + '; animation-duration: ' + duration + 's; "/>')
+    $('.bg').append('<circle class="bg-circle" cx="50" cy="50" r="'+radius+'" style="stroke-dasharray: '+ stroke +'; stroke-dashoffset: '+ offset + '; animation-name: ' + animation + '; animation-duration: ' + duration + 's; "/>')
   }
-  $("svg").html($("svg").html());
+  $(".bg").html($(".bg").html());
+})
+
+$(function() {
+  $('.nav-burger, .nav-links').click(function(){
+    $('.nav-links').toggleClass('active')
+  })
 })
