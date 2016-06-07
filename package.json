@@ -1,0 +1,15 @@
+{
+  "name": "bugle-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Bugle Labs",
+  "main": "main.js",
+  "author": "Vishnu R Menon, Bugle Labs",
+  "license": "ISC",
+  "scripts": {
+    "dev": "harp server & browser-sync start --proxy 'localhost:9000' --files '*.html, */*.scss'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.1.12",
+    "harp": "^0.20.3"
+  }
+}
