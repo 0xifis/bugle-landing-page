@@ -6,7 +6,7 @@
   "author": "Vishnu R Menon, Bugle Labs",
   "license": "ISC",
   "scripts": {
-    "dev": "harp server & browser-sync start --proxy 'localhost:9000' --files '*.html, **/*.scss'"
+    "dev": "harp server & browser-sync start --proxy 'localhost:9000' --files '**/*.jade, **/*.html, **/*.scss'"
   },
   "devDependencies": {
     "browser-sync": "^2.1.12",
