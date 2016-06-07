@@ -11,6 +11,9 @@ $(function() {
     $('.bg').append('<circle class="bg-circle" cx="50" cy="50" r="'+radius+'" style="stroke-dasharray: '+ stroke +'; stroke-dashoffset: '+ offset + '; animation-name: ' + animation + '; animation-duration: ' + duration + 's; "/>')
   }
   $(".bg").html($(".bg").html());
+  for(var j = 0; j < num; j++) {
+    $('circle:nth-of-type('+j+')').delay(j*Math.random()*500).fadeIn("slow");
+  }
 })
 
 $(function() {

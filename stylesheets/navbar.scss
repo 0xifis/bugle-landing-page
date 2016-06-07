@@ -5,11 +5,11 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-}
 
-nav > ul {
-  display: flex;
-  flex-wrap: wrap;
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .nav-links {
@@ -36,8 +36,6 @@ nav > ul {
     background: lighten($nav-bg, 30);
   }
 }
-
-
 
 .brand {
   background: $nav-bg;
