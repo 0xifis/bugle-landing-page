@@ -1,5 +1,7 @@
-$nav-bg: #2D374F;
-$nav-text-color: #FFF;
+$nav-mobile-bg: #2D374F;
+$nav-full-bg: #FFF;
+$nav-mobile-text: #FFF;
+$nav-full-text: #2D374F;
 
 nav {
   position: fixed;
@@ -9,36 +11,42 @@ nav {
   > ul {
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
   }
 }
 
 .nav-links {
   vertical-align: middle;
-  background: lighten($nav-bg, 20);
+  background: lighten($nav-mobile-bg, 20);
   width: 100vw;
-  color: $nav-text-color;
+  color: $nav-mobile-text;
   font-family: sans-serif;
-  line-height: 60px;
+  line-height: 30px;
+  padding: 15px 0;
   text-align: center;
-  border-left: 0 solid $nav-text-color;
-  transition-property: margin, border, background;
+  border-left: 0 solid $nav-mobile-text;
+  transition-property: opacity, margin, border, background;
   transition-duration: .4s;
   cursor: pointer;
-  margin-top: -300px;
+  margin: -300px 0 0;
+  opacity: 0;
   z-index: 0;
 
-  &.active {
-    margin-top: 0;
-  }
+  @media screen and (max-width: 599px) {
+    &.active {
+      margin-top: 0;
+      opacity: 1;
+    }
 
-  &:hover {
-    border-left-width: 20px;
-    background: lighten($nav-bg, 30);
+    &:hover {
+      border-left-width: 20px;
+      background: lighten($nav-mobile-bg, 30);
+    }
   }
 }
 
 .brand {
-  background: $nav-bg;
+  background: $nav-mobile-bg;
   width: 100vw;
   text-align: center;
   z-index: 1;
@@ -57,10 +65,68 @@ nav {
 .nav-burger {
   line-height: 25px;
   font-size: 25px;
-  color: $nav-text-color;
+  color: $nav-mobile-text;
   vertical-align: middle;
   position: absolute;
   right: 17.5px;
   cursor: pointer;
   margin: 17.5px 0;
+}
+
+//  Desktop navbar styling
+
+@media screen and (min-width: 600px) {
+  nav {
+    background: $nav-full-bg;
+
+    > ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+
+    }
+  }
+
+  .logo-dark {
+    display: unset;
+  }
+
+  .logo-light {
+    display: none;
+  }
+
+  .brand {
+    background: $nav-full-bg;
+    width: 20vw;
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-links {
+    background: $nav-full-bg;
+    color: $nav-full-text;
+    margin: 15px 2vw;
+    padding: 0;
+    opacity: 1;
+    width: unset;
+    transition: box-shadow .5s;
+
+    &:after {
+      display: block;
+      content: '';
+      border-bottom: solid 3px $nav-full-text;
+      transform: scaleX(.0001);
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  .nav-burger {
+    display: none;
+  }
 }
