@@ -20,7 +20,6 @@ nav {
   background: lighten($nav-mobile-bg, 20);
   width: 100vw;
   color: $nav-mobile-text;
-  font-family: sans-serif;
   line-height: 30px;
   padding: 15px 0;
   text-align: center;
@@ -28,6 +27,8 @@ nav {
   transition-property: opacity, margin, border, background;
   transition-duration: .4s;
   cursor: pointer;
+  font-family: 'Museo';
+  font-weight: 300;
   margin: -300px 0 0;
   opacity: 0;
   z-index: 0;
@@ -56,10 +57,10 @@ nav {
   margin: 15px 0;
   max-height: 30px;
   vertical-align: middle;
-}
 
-.logo-dark {
-  display: none;
+  &-dark {
+    display: none;
+  }
 }
 
 .nav-burger {
@@ -77,39 +78,46 @@ nav {
 
 @media screen and (min-width: 600px) {
   nav {
-    background: $nav-full-bg;
+    background: none;
 
     > ul {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
-
     }
   }
 
-  .logo-dark {
-    display: unset;
-  }
+  .logo {
+    float: left;
 
-  .logo-light {
-    display: none;
+    &-dark {
+      display: unset;
+    }
+
+    &-light {
+      display: none;
+    }
   }
 
   .brand {
     background: $nav-full-bg;
     width: 20vw;
     position: absolute;
-    left: 0;
+    left: 2vw;
   }
 
   .nav-links {
-    background: $nav-full-bg;
+    background: none;
     color: $nav-full-text;
-    margin: 15px 2vw;
+    margin: 15px 1vw;
     padding: 0;
     opacity: 1;
     width: unset;
     transition: box-shadow .5s;
+
+    &:last-child {
+      margin-right: 2vw;
+    }
 
     &:after {
       display: block;
