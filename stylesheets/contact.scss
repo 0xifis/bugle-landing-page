@@ -1,0 +1,27 @@
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 80vw;
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+input,
+textarea {
+  display: block;
+  width: 80vw;
+  max-width: 600px;
+  font-size: .8em;
+  line-height: 1em;
+  padding: .5em;
+  border-radius: .25em;
+  border: .1em solid #999;
+  margin-bottom: 20px;
+
+  &.half {
+    width: 38vw;
+    max-width: 280px;
+    display: inline-block;
+  }
+}

@@ -1,7 +1,7 @@
 @import './variables';
 @import './mixins';
 @import '../vendor/typi/scss/typi';
-// @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400italic|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400italic|Source+Sans+Pro');
 @include font-face('Museo', fonts/Museo-100, 100, normal, woff2 woff otf)
 @include font-face('Museo', fonts/Museo-300, 300, normal, woff2 woff otf)
 @include font-face('Museo', fonts/Museo-500, 500, normal, woff2 woff otf)
