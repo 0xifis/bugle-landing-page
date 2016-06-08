@@ -1,0 +1,31 @@
+@import './base/variables';
+
+.button {
+  font-family: 'Raleway', sans-serif;
+  font-size: .8em;
+  line-height: .8em;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border: .125em solid $primary-1;
+  color: $primary-1;
+  border-radius: .2em;
+  padding: .6em;
+  transition: background, color .5s;
+
+  &-dark {
+    background: $primary-1;
+    color: $white;
+  }
+
+  &:hover {
+    background: darken($primary-1, 5);
+    color: $white;
+  }
+
+  &:active,
+  &:target {
+    background: darken($primary-1, 10);
+    color: $white;
+  }
+}

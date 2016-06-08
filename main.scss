@@ -3,6 +3,8 @@
 @import './stylesheets/base/type';
 @import './stylesheets/animated-circles';
 @import './stylesheets/navbar';
+@import './stylesheets/hero';
+@import './stylesheets/button';
 
 section {
   height: 100vh;
@@ -11,59 +13,13 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+  min-height: 430px;
 
-#hero {
-  padding: 60px 8vw;
-
-  h1 {
-    text-transform: uppercase;
-    margin-bottom: 2vh;
-    max-width: 600px;
+  @media screen and (min-width: 800px) {
+    min-height: 470px;
   }
 
-  p {
-    max-width: 450px;
-  }
-}
-
-.bugle-container {
-  position: absolute;
-  left: 40vw;
-  bottom: 2vh;
-  width: 20vw;
-  height: 12vw;
-
-  @media screen and (min-width: 600px) {
-    left: 45vw;
-    width: 10vw;
-    height: 6vw;
-  }
-
-  @media screen and (min-width: 1000px) {
-    left: 47vw;
-    width: 6vw;
-    height: 3.6vw;
-  }
-}
-
-.bugle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: $primary-1;
-  stroke-width: 3px;
-  stroke-dasharray: 1723;
-  stroke-dashoffset: 1723;
-  animation: 2s ease-in-out 4s 1 normal forwards running bugleAnimate;
-}
-
-@keyframes bugleAnimate {
-  from {
-    stroke-dashoffset: 1723;
-  }
-
-  to {
-    stroke-dashoffset: 0;
+  @media screen and (min-width: 1300px) {
+    min-height: 570px;
   }
 }
