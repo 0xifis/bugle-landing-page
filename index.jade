@@ -12,19 +12,24 @@ html(lang='en')
     script(src='/main.js', charset='utf-8')
     title Bugle Labs
   body
-    section#hero
-      nav
-        ul
-          li.brand
-            img.logo.logo-dark(src='/images/logo-dark.png', alt='')
-            img.logo.logo-light(src='/images/logo-light.png', alt='')
-            span.nav-burger ☰
-          li.nav-links Who We Are
-          li.nav-links What We Do
-          li.nav-links fira
-          li.nav-links Get In Touch
+    nav
+      ul
+        li.brand
+          img.logo.logo-dark(src='/images/logo-dark.png', alt='')
+          img.logo.logo-light(src='/images/logo-light.png', alt='')
+          span.nav-burger ☰
+        li.nav-links Who We Are
+        li.nav-links What We Do
+        li.nav-links fira
+        li.nav-links Get In Touch
+    section.bg-container#hero
+      h1 Bespoke agile development
+      p Bugle is a agile product design and devlopment studio that delivers premium products and services
+      div.bugle-container
+        svg.bugle(viewbox='0 0 510 320', width='335', height='210')
+          path.bugle-path(d="M492.4,165.9c0.8,6.1,6.3,10.4,12.4,10.4l1.7,0l0.1-167.8l-1.7,0c-6.1,0-11.5,4.3-12.4,10.4 C486.7,61.6,445,71.6,422,73.6c-22.8,2-69.7,4.8-108.3,5.4c-0.4,0-0.8-0.1-1.2-0.1l-130.1-0.1l0,0L37,78.9l0-6.3 c0-9-7.3-16.3-16.3-16.3S4.4,63.6,4.4,72.6l0,45.2c0,9,7.3,16.3,16.3,16.3c9,0,16.3-7.3,16.3-16.3l0-6.3l45.6,0 c-21.7,21-35.3,50.4-35.3,82.9c0,63.7,51.8,115.6,115.5,115.7l149.5,0.1c63.7,0,115.6-51.8,115.7-115.5c0-33.5-14.3-63.6-37.1-84.7 c12.4,0.2,23.3,0.6,31,1.2C445,113.3,486.6,123.4,492.4,165.9z M395.4,194.7c0,45.7-37.2,82.9-83,82.9l-149.5-0.1 c-45.7,0-82.9-37.2-82.9-83c0-45.7,37.2-82.9,83-82.9l19.4,0l0,0l130.1,0.1C358.2,111.7,395.4,148.9,395.4,194.7z")
+      svg.bg(viewbox='0 0 100 100', width='100', height='100')
     section#who-we-are
     section#what-we-do
     section#fira
-    section#contact-us.bg-container
-      svg.bg(viewbox='0 0 100 100', width='100', height='100')
+    section#contact-us
