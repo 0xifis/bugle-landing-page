@@ -1,0 +1,20 @@
+@import './base/variables';
+
+#who-we-are {
+  background: $primary-1;
+  min-height: unset;
+  padding: 10vh 10vw;
+
+  @media screen and (min-width: 1000px) {
+    padding: 10vh 20vw;
+  }
+
+  h1 {
+    color: $white;
+    text-align: center;
+
+    span {
+      color: $highlight-1;
+    }
+  }
+}
