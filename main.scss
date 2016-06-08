@@ -4,22 +4,14 @@
 @import './stylesheets/animated-circles';
 @import './stylesheets/navbar';
 @import './stylesheets/hero';
+@import './stylesheets/what-we-do';
 @import './stylesheets/button';
 
 section {
-  height: 100vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 430px;
-
-  @media screen and (min-width: 800px) {
-    min-height: 470px;
-  }
-
-  @media screen and (min-width: 1300px) {
-    min-height: 570px;
-  }
+  min-height: 100vh;
 }

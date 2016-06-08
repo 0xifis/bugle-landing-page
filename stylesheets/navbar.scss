@@ -35,7 +35,7 @@ nav {
   opacity: 0;
   z-index: 0;
 
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 699px) {
     &.active {
       margin-top: 0;
       opacity: 1;
@@ -78,7 +78,7 @@ nav {
 
 //  Desktop navbar styling
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   nav {
     transition: background 1s;
     background: linear-gradient(to bottom, $nav-full-bg 40%, $nav-full-bg-transparent 100%);
