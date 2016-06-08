@@ -11,10 +11,10 @@
 @include font-face('MuseoSans', fonts/Museo-Sans-500, 500, normal, woff2 woff otf)
 
 $typi: (
-  null: 16px,
-  small: 25px,
-  medium: 30px,
-  large: 38px
+  null: 14px,
+  small: 22px,
+  medium: 26px,
+  large: 36px
 );
 
 html {
@@ -22,7 +22,7 @@ html {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   font-family: 'Museo', sans-serif;
   font-weight: 700;
   color: $primary-1;

@@ -14,11 +14,16 @@ section {
 }
 
 #hero {
-  padding: 60px 4vw;
+  padding: 60px 8vw;
 
   h1 {
     text-transform: uppercase;
     margin-bottom: 2vh;
+    max-width: 600px;
+  }
+
+  p {
+    max-width: 450px;
   }
 }
 
