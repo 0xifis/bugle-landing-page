@@ -1,7 +1,7 @@
 @import './base/variables';
 
 #hero {
-  padding: 120px 8vw;
+  padding: 120px 8vw 60px;
   justify-content: flex-end;
 
   h1 {
@@ -11,7 +11,7 @@
   }
 
   p {
-    max-width: 450px;
+    max-width: 300px;
     margin-bottom: 5vh;
   }
 

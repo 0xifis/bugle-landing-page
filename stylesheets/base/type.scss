@@ -9,10 +9,10 @@
 @include font-face('Museo', fonts/Museo-500, 100, normal, woff2 woff otf)
 
 $typi: (
-  null: 18px,
-  small: 22px,
-  medium: 25px,
-  large: 30px
+  null: 14px,
+  small: 17px,
+  medium: 19px,
+  large: 23px
 );
 
 html {
@@ -20,14 +20,14 @@ html {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.6em;
   font-family: 'Museo', sans-serif;
   font-weight: 700;
   color: $primary-1;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: 'Museo', sans-serif;
   font-weight: 300;
   color: $primary-1;
@@ -41,8 +41,8 @@ p {
 }
 
 blockquote {
+  font-size: 1.9em;
   font-family: 'Droid Serif', serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 1.5em;
 }
